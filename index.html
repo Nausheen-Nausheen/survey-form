@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform </p>
+    </header><br>
+    <main id="form_part">
+        <form id="survey-form">
+
+             <div class="form-div">
+                <label id="name-label" for="name"> Name</label><br>
+                <input id="name" class="form-control" type="text" placeholder="Enter your name" required><br>
+             </div>
+              
+             <div class="form-div">
+                <label id="email-label" for="email">Email</label><br>
+                <input type="email" id="email" class="form-control"  placeholder="Enter your email" required><br>
+             </div>
+             <div class="form-div">
+                <label id="number-label" for="number">Age(optional)</label><br>
+                <input type="number" id="number" class="form-control" min="12" max="35" placeholder="Age"><br>  
+             </div>
+             <div class="form-div">
+                <label for="dropdown">Which option best describes your current role?</label><br>
+                <select id="dropdown" class="form-control" >
+                   <option disabled selected option>select your role </option>
+                   <option value="student">student</option>
+                   <option value="full time job">full time job</option>
+                   <option value="full time learner">full time learner</option>
+                   <option value="other">other</option>
+                </select><br>
+             </div>
+             <div class="form-div">
+                <label for="radio">Would you recommend freeCodeCamp to a friend?</label><br>
+                <input type="radio" class="radio" id="radio1" value="name" name="radio">
+                <label for="radio1">Definately</label><br>
+                <input type="radio" class="radio" id="radio2" value="name" name="radio">
+                <label for="radio2">May be</label><br>
+                <input type="radio" class="radio" id="radio2" value="name" name="radio">
+                <label for="radio3">Not sure</label><br>
+             </div>
+             <div class="form-div">
+                <label for="checkbox">What would you like to see improved? (Check all that apply)</label> <br>
+                <input type="checkbox" id="checkbox1" class="checkbox" value="Front-end Projects">
+                <label for="checkbox1">Front-end Projects</label><br>
+                <input type="checkbox" id="checkbox2" class="checkbox"  value="Back-end Projects">
+                <label for="checkbox2">Back-end Projects</label><br>
+                <input type="checkbox" id="checkbox3" class="checkbox"  value="Data visualization">
+                <label for="checkbox3">Data visualization</label><br>
+             </div>
+   
+             <div class="form-div">
+                <label for="textarea">Any comments or suggestions?</label><br>
+                <textarea id="textarea" cols="30" rows="10" placeholder="Enter your comment here..."></textarea><br>
+             </div>
+
+             <div class="form-div">
+                <button id="submit">Submit</button>
+             </div>
+        
+        </form>
+    
+    </main>
+    
+</body>
+</html>
